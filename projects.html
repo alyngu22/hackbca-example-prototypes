@@ -50,18 +50,15 @@
       <div class="row">
         <div class="col l3 s12 "> <i class="left material-icons">sort</i>Sorted by: Date / Time</div>
         <div class="col l3 offset-l6 ">
-          <!-- Position differently (left) for mobile -->
           <div class="right hide-on-small-only"><i class="left material-icons">filter_list</i>Filter: None</div>
           <div class="left hide-on-med-and-up"><i class="left material-icons">filter_list</i>Filter: None</div>
         </div>
 
       </div>
 
-      <!-- https://materializecss.com/table.html -->
       <table class="highlight centered responsive-table">
         <thead>
           <tr>
-            <!-- USER ONLY-->
             <th>Project</th>
             <th>Owner <a href="?sort=owner">
                 <i class="material-icons">sort</i></a>
@@ -76,12 +73,38 @@
             </th>
           </tr>
 
-          <!-- ADMIN ONLY BUTTONS -->
-          <th>Admin Op</th>
         </thead>
 
         
           <tbody>
+            <tr>
+            <td class="white-text clickable" onclick="location.href='/projects/1.html'">EVAC</td>
+            <td class= "white-text">  <a href= '?filter=owner: Alyssa, Isabel, Emma'> Alyssa, Isabel, Emma </a> </td>
+            <td class = "white-text"> <a href= '?filter=dateproposed: October 15'> October 15 </a> </td>
+            <td class= "white-text"> <a href= '?filter=type: webapp'> Web Application </a> </td>
+
+            </tr>
+            <tr>
+            
+            <td class="white-text clickable" onclick="location.href='/projects/2.html'">Sased Li</td>
+            <td class= "white-text">  <a href= '?filter=owner: Anthony, Edward, Sasha'> Anthony, Edward, Sasha </a> </td>
+            <td class = "white-text"> <a href= '?filter=dateproposed: October 17'> October 17 </a> </td>
+            <td class= "white-text"> <a href= '?filter=type: webapp'> Web Application </a> </td>
+            </tr>
+            <tr>
+            
+              <td class="white-text clickable" onclick="location.href='/projects/3.html'">NJCICC</td>
+              <td class= "white-text">  <a href= '?filter=owner: Penelope, Sarah, Devin'> Penelope, Sarah, Devin </a> </td>
+              <td class = "white-text"> <a href= '?filter=dateproposed: October 17'> October 15 </a> </td>
+              <td class= "white-text"> <a href= '?filter=type: webapp'> Web Application </a> </td>
+              </tr>
+              <tr>
+            
+                <td class="white-text clickable" onclick="location.href='/projects/4.html'">Xiaoling Zhu</td>
+                <td class= "white-text">  <a href= '?filter=owner: Kyle, Yale, Eric'> Kyle, Yale, Eric </a> </td>
+                <td class = "white-text"> <a href= '?filter=dateproposed: October 17'> October 16 </a> </td>
+                <td class= "white-text"> <a href= '?filter=type: webapp'> Web Application </a> </td>
+                </tr>
 
         </tbody>
       
@@ -93,41 +116,10 @@
     </a>
   </main>
 
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Sponsors</h5>
-          <p>hackBCA is brought to you by:</p>
-          <ul>
-            <li>BCA PPO</li>
-            <li>Tech-Pa</li>
-            <li>&lt;Corporate Sponsors&gt;</li>
-            <li>Wanna join this list? Sponsor us!</li>
-          </ul>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Contact Us</h5>
-          <ul>
-            <li> this is a fUNkY hEAdER </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2021 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-      </div>
-    </div>
-  </footer>
-
   <script src="/js/event_utils.js"></script>
 
   <!-- Compiled and minified JavaScript -->
-  <script src="/js/materialize.min.js"></script>
 
-  <!-- initialize Materialize elements -->
   <script> M.AutoInit();</script>
 
 </body>
